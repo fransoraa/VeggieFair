@@ -1,0 +1,1356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@keyframes puff-in-top{0%{transform:scale(2);transform-origin:50% 0;filter:blur(4px);opacity:0}100%{transform:scale(1);transform-origin:50% 0;filter:blur(0);opacity:1}}
+
+@-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  
+
+body{
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 15px;
+
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #bfd4be;
+    border-radius: 15px;
+    
+}
+
+header{ 
+    display: flex;
+    /*background-image: url(/img/wave.png;*/
+    background-color: rgb(227, 255, 204);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+
+.nav-paginas{
+    padding: 10px;
+    margin-left: 150px;
+}
+
+header nav ul{
+    list-style: none;
+    list-style-type: none;
+}
+.navegador{
+    color: rgb(25, 25, 25);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	padding: 15px 5px;
+	margin-top: -10px;
+    margin-right: 25px;
+	float: left;    
+    text-decoration: none;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    
+}
+
+.navegador-seleccionado{
+    font-weight: bold;
+}
+
+.navegador:hover{
+    background-color:rgb(198, 235, 168);
+    border-radius:100% 0% 100% 0% / 100% 0% 100% 0%;
+
+}
+
+#veggiefair{
+	padding: 15px 25px;
+	margin-top: -15px;
+	margin-right: 10px;	
+	float: left;  
+    text-decoration: none;  
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    transition-property: all;
+}
+
+img.logo-header{
+    height: 50px;
+}
+
+.header-entradas{
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.5em;
+    background: #ffffff;
+    border: 2px solid #ddffdb;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ededed;
+    border-radius: 30px 0 30px;
+    margin-right: 25px;
+    cursor: pointer;
+    position: static;
+    text-decoration: none;
+    margin-top: -15px;
+}
+
+.header-entradas:active{
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+}
+
+
+main{ 
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    background-image: url(/img/fondo-festival.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.contenedor1-main{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+h2.titulo-main{
+    font-size: 85px;
+    color: azure;
+    font-family:'Montserrat', sans-serif;
+    margin-top: 80px;
+}
+
+.texto-main{
+    display: flex;
+    font-size: 27px;
+    color: azure;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -68px;
+    margin-left: 7px;
+
+}
+
+.fecha-main{
+    display: flex;
+    font-size: 23px;
+    color: azure;
+    font-family:'Montserrat', sans-serif;
+    margin-left: 16px;
+    margin-bottom: -79px;
+}
+
+.botonentradas{
+    font-size: 23px;
+    background: transparent;
+    border: none;
+    font-family:'Montserrat', sans-serif;
+    display: flex;
+    position: relative;
+    color: #f0f0f0;
+    z-index: 1;
+    margin-top: 135px;
+    margin-bottom: 500px;
+    margin-left: 200px;
+    padding: 25px 30px;
+    text-decoration: none;
+   }
+   
+   .botonentradas::after,
+   .botonentradas::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+   }
+   
+   .botonentradas::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #5e835c;
+    border-radius: 10px;
+   }
+   
+   .botonentradas::after {
+    transform: translate(0px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+   }
+   
+   .botonentradas:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+   }
+   
+   .botonentradas:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+   }
+   
+   .botonentradas:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+   }
+
+.contenedorMedio-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.contenedo-fondo{
+    display: flex;
+    height: 260px;
+    width: 30%;
+    background-color: #0bff34;
+}
+
+.titulo-spotify{
+    display: flex;
+    font-size: 20px;
+    color: azure;
+    font-family:'Montserrat', sans-serif;
+    margin-bottom: 300px;
+    margin-top: -250px;
+    background-color: #5e835c;
+    padding: 25px 35px;
+    border-radius: 70px;
+}
+
+img.spotify{
+    display: flex;
+    width: 250px;
+    margin-bottom: 300px;
+    margin-top: -275px;
+    border-radius: 20px;
+    margin-left: 85px;
+    
+}
+   
+
+.contenedor2-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineup{ 
+    height: 260px;
+    width: 30%;
+    margin-top: -100px;
+    /* vidrio */
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.titulo-lineup{
+    display: flex;
+    font-size: 35px;
+    color: azure;
+    font-family:'Montserrat', sans-serif;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    padding: 25px 35px;
+    border-radius: 70px;
+    margin-right: 40px;
+    
+}
+
+/* carrusel */
+
+.carrusel{
+    padding: 20px;
+    display: flex;
+}
+.carrusel-items{
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;   
+}
+.carrusel-item{
+    min-width: 150px;
+    max-width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition-delay: 0,5s;
+    transition-duration: 0,5s;
+    transition-property: border;
+    display: flex;
+    flex-direction: column;
+}
+.carrusel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;   
+}
+.carrusel-item:hover{
+    transform: scale(1.1);
+    border: white solid 2px;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+/*nombres de los artistas*/
+
+.axeltexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+
+#axelfoto1:hover .axeltexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.alantexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+#alanfoto1:hover .alantexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.julitexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#julifoto1:hover .julitexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.loutatexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#loutafoto1:hover .loutatexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.lucatexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#lucafoto1:hover .lucatexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.dukitexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#dukifoto1:hover .dukitexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.fitotexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#fitofoto1:hover .fitotexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.lalitexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#lalifoto1:hover .lalitexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.wostexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#wosfoto1:hover .wostexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.cazzutexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#cazzufoto1:hover .cazzutexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.nickitexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#nickifoto1:hover .nickitexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.truenotexto{
+    display: none; 
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: -5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#truenofoto1:hover .truenotexto{
+    background-color: #5e835c;
+    display: block;
+}
+
+.entradas{ 
+    height: 300px;
+    width: 500px;
+}
+
+
+footer{ 
+    display: flex;
+    height: 40px;
+    background-color: rgb(154, 217, 140);
+    justify-content:space-between;
+    padding: 40px;  
+}
+
+.contenedor1-footer{
+    display: flex;
+
+}
+
+.contenedor2-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: -25px;
+
+}
+
+img.logo-footer{
+    margin: 0;
+    height: 75px;
+    margin-top: -20px;
+    margin-right: 20px;
+}
+
+p.texto-footer{
+    display: inline;
+    font-size: 22px;
+    font-family: 'Heebo', sans-serif;
+    color: whitesmoke;
+    margin-top: -12px;
+    
+}
+
+
+.nav-redes ul li{
+    float: left;
+    margin-right: 35px;
+    list-style: none;
+    margin-top: -20px;
+    
+}
+
+img.redes{
+    height: 30px;
+    padding: 2px;
+    filter: invert(90%);
+    border-radius: 60px;
+    transition-duration: 0,5s;
+    transition-property: all;
+}
+
+img.redes:hover{
+    height: 30px;
+    padding: 2px;
+    background-color: rgb(191, 120, 201);
+    box-shadow: inset 5px 8px 8px 1px rgba(0,0,0,0.5);
+    
+}
+
+/* @media (min-width: 1300px) {
+    main{ 
+        
+        flex-direction: row;
+    }
+    .botonentradas:hover{ 
+        font-size: 25px;
+        padding: 15px 55px;
+    }
+} */
+
+/*///////////////////////////ENTRADAS//////////////////////////////*/
+
+section.entradas{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 200px;
+    margin-top: 30px;
+    
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 404px;
+    margin: 0 auto;
+    margin-right: 20px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 15px 15px 30px #191919;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+    transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.tarjetas:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: scale(1.05);
+   }
+
+p.titulo{
+    font-size: 35px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+img.imagen-entrada{
+    height: 170px;
+    width: 200px;
+    border-radius: 15px;    
+}
+
+.descripcion{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #5e835c;
+    color: #f0f0f0;
+    text-align: start;
+    padding: 10px;
+    margin: 20px;
+    margin-top: -20px;
+
+}
+
+.boton-comprar2{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #5e835c;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.boton-comprar2:hover{
+    color: #3b6b00;
+    background-color: #f0f0f0;
+   
+}
+
+
+.navegador-entradas{
+    color: rgb(25, 25, 25);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	padding: 15px 5px;
+	margin-top: -10px;
+    margin-right: 25px;
+	float: left;    
+    text-decoration: none;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    
+}
+.navegador-entradas:hover{
+    background-color:rgb(198, 235, 168);
+    border-radius:100% 0% 100% 0% / 100% 0% 100% 0%;
+    
+}
+
+.nav-paginas{
+    padding: 10px;
+    
+}
+
+.overlay{
+    background:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.popup{
+    background-color: #f8f8f8;
+    box-shadow:  0 0 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family:'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 370px;
+
+    transition: .5s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.popup.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn-cerrar-popup{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #62b200;
+    transition: 1s ease all;
+}
+
+.btn-cerrar-popup:hover{
+    color: #4f8c00;
+}
+
+.titulo-popup{
+    font-size: 25px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family:'Montserrat', sans-serif;
+
+}
+
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 180px;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+  
+  .form__field {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 15px;
+    color: rgb(9, 9, 9);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #119928, #38ef44);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #5e835c;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+.btn-submit{
+    width: 150px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #7ccd45;
+    border-radius: 10px;
+    border: 0px;
+    transition: 0.5s ease all;
+}
+
+.link-contra{
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;
+    color: #19d426;
+}
+
+.btn-submit:hover{
+    background-color: rgb(111, 160, 51);
+}
+
+
+
+/*///////////////////////////MERCH//////////////////////////////*/
+
+
+
+.main-merch{
+    display: flex;
+    flex-grow: 1;
+    background-image: url(/img/fondo-festival-difuminado.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    
+}
+
+.slider-img{
+    max-width: 100%;
+}
+
+.container-slider{
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    margin-top: -15px;
+
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 8.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(102, 102, 102);
+    width: 16px;
+    height: 16px;
+    border-radius: 24px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #667d65;
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagination-item:hover{
+    transform: scale(1.3);
+}
+
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300s;
+}
+
+/*.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}*/
+
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for ="1"]{
+    background-color: #f0f0f0;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for ="2"]{
+    background-color: #f0f0f0;
+}
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for ="3"]{
+    background-color: #f0f0f0;
+}
+
+
+@keyframes autoplay{
+    33%{
+        transform: translate3d(calc(-100% *0), 0, 0);
+    }
+    66%{
+        transform: translate3d(calc(-100% *1), 0, 0);
+    }
+    100%{
+        transform: translate3d(calc(-100% *2), 0, 0);
+    }
+}
+
+.container{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 65px 0px;
+    margin-bottom: -50px;
+}
+
+.caja img{
+    width: 220px;
+    height: 220px;
+    transition: all 0.5s;
+}
+
+.caja img:hover{
+    transform: scale(0.9);
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.caja{
+    margin: 15px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.caja p{
+    text-align: center;
+    font-size: 15px;
+    font-family:'Montserrat', sans-serif;
+}
+
+
+/*///////////////////////////INFORMACION//////////////////////////////*/
+
+
+main.main-info{
+    display: flex;
+    background: #f5fff4;
+    
+    
+}
+
+h5.titulo-info{
+    font-size: 35px;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #3b6b00;
+
+}
+
+p.parrafo-info{
+    margin: 80px;
+    font-size: 25px;
+    font-family:'Montserrat', sans-serif;
+    text-align: justify;
+    margin-top: -13px;
+}
+
+.link-uva{
+    color: #4f8c00;
+}
+
+.creadores{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.creadores figure{
+    position: relative;
+    height: 260px;
+    width: 260px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    float: left;
+    margin: 10px;
+    align-self: center;
+    -webkit-box-shadow: 10px 10px 26px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 26px -14px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 26px -14px rgba(0,0,0,0.75);
+    
+}
+
+.creadores figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.creadores figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 250ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+p.nombre-creador{
+    font-size: 25px;
+    color: #5e835c;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 105px;
+}
+
+.creadores figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*///////////////////////////LINE-UP//////////////////////////////*/
+
+
+.mainlineup{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    background-image: url(/img/fondo-festival-difuminado.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.lineup-img{
+    width: 50%;
+    padding: 20px;
+    animation:puff-in-top .5s cubic-bezier(.47,0.000,.745,.715) both;
+    margin-bottom: 100px; 
+    border-radius: 30px;
+}
+
+
+/*///////////////////////////EVENTO//////////////////////////////*/
+
+
+.main-evento{
+    display: flex;
+    background: #f5fff4;
+    justify-content: center;
+
+}
+
+.section-evento{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.section-evento-feria{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50PX;
+    background-color: #3b6b00;
+    border-radius: 200px;
+    padding: 10px;
+}
+
+.titulo-evento{
+    font-size: 50px;
+    font-family:'Montserrat', sans-serif;
+    color: #2e5400;
+}
+
+.titulo-evento2{
+    font-size: 40px;
+    font-family:'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-left: 10px;
+    text-align: center ;
+    
+}
+
+.imagen-evento{
+    width: 95px;
+    height: 95px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all 2s ease;
+}
+
+.imagen-evento:hover{
+    transform: rotate(-360grad);
+}
+
+.parrafo-evento{
+    font-size: 30px;
+    font-family:'Montserrat', sans-serif;
+    padding: 10px 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 85px;
+
+}
+
+.parrafo-evento2{
+    font-size: 25px;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 46px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.parrafo-evento3{
+    font-size: 25px;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: 80px;
+    margin-right: 90px;
+    margin-bottom: 40px;
+}
+
+
+/*///////////////////////////LOADER//////////////////////////////*/
+
+
+.contenedor-loader{
+    background-color: #f3f3f3;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    transition: all 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader,
+.loader:before,
+.loader:after{
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    animation: Loader 1.5s infinite ease-out;
+}
+
+.loader{
+    color: #3b6b00;
+    font-size: 13px;
+    position: relative;
+    animation-delay: -0.16s;
+
+}
+
+.loader:before,
+.loader:after{
+    content: '';
+    position: absolute;
+    top: 0;
+}
+
+.loader:before{
+    left: -3.5em;
+    animation-delay: -0.32s;
+}
+
+.loader:after{
+    left: 3.5em;
+}
+
+@keyframes Loader{
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40%{
+        box-shadow: 0 2.5em 0 0;
+    }
+}
